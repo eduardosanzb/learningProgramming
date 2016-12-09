@@ -16,15 +16,16 @@ Thenvironmentse first _3_ hours of the course are free in __[youtube](https://ww
     *  ``` street = 'Main Street 123' ```
 *   Objects
     * _The simplest definition when talking about **Javascript**_
+    * 
     * ``` javascript
-	{
+        {
             street: 'Main ,
             Number: 123, 
-	    Apartment: {
+	        Apartment: {
                 Floor:3,
                 Number: 301
              }
-	} ```
+	    } 
     * We see the nested objects inside another object, **its just that simple**
 
 --------------
@@ -41,7 +42,7 @@ So if you create a variable or function, will be attached to the window
 ``` javascript
     a = 'Hello'
     function b(){}
-​```
+```
 
 * ``` window.a == a ```
 * ``` window.b == b ```
@@ -91,7 +92,7 @@ WTF happen:
     5. Now we end to fill the stack and we start poping.
 
 Here we have to keep in mind the __Execution stack__
-​```` javascript
+```` javascript
     function a(){
       b()
       console.log('from a');
@@ -106,7 +107,7 @@ Here we have to keep in mind the __Execution stack__
     console.log('test');
     var sd= 'sd'
     console.log(sd);
-​````
+````
 Will logout: 
 ```
     - from b
@@ -121,7 +122,7 @@ ____________
 ___________
 ## The scope chain
 For example:
-​```` javascript
+```` javascript
     function a(){
       myVar = 2
       b()
@@ -135,8 +136,8 @@ For example:
     var myVar = 1;
     a()
     //console.log(myVar);
-​````
-In a() nad b() if we dont found a local  ```` myVar ````  Js will chain the scope and look up in the parent or under stack context enviroment. b() will not look for ```myVar``` in the context of a()
+````
+In `a()` and `b()` if we dont found a local  ```` myVar ````  Js will chain the scope and look up in the parent or under stack context enviroment. b() will not look for ```myVar``` in the context of a()
 
 * Scope
     * Where a variable is available in your code. And if its truly the same variable, or a new copy.
@@ -179,7 +180,7 @@ This will event the ```event loop```
     * COnverting a value from one type to another. That happens quite often in JS cuz the dynamic typing.
 
 All this lead us to __comparison operators__, that if you dont understand what we talk before you can find this _weird_!!
-​```javascript
+```javascript
     1 < 2 < 3  => true
     3 < 2 < 1 => true //why? It should be false!
 ```
