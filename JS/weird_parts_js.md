@@ -17,16 +17,14 @@ Thenvironmentse first _3_ hours of the course are free in __[youtube](https://ww
 *   Objects
     * _The simplest definition when talking about **Javascript**_
     * ``` javascript
-        {
+	{
             street: 'Main ,
-            Number: 123,
-            Apartment:
-             {
+            Number: 123, 
+	    Apartment: {
                 Floor:3,
                 Number: 301
              }
-        }
-      ```
+	} ```
     * We see the nested objects inside another object, **its just that simple**
 
 --------------
@@ -43,9 +41,11 @@ So if you create a variable or function, will be attached to the window
 ``` javascript
     a = 'Hello'
     function b(){}
-​````
+​```
+
 * ``` window.a == a ```
 * ``` window.b == b ```
+
 The execution Context create:
 1. Global Object
 2. _this_
